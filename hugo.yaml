@@ -1,0 +1,34 @@
+---
+baseURL: 'https://www.cunov.net'
+languageCode: en-us
+title: cunov.net
+theme: nightfall
+
+menu:
+  header:
+    - name: posts
+      weight: 0
+      url: posts
+    - name: about
+      weight: 1
+      url: about
+
+params:
+  author: rcunov
+  user: rcunov
+  hostname: www.cunov.net
+  readingTime: true
+  published: true
+  social:
+    - key: 0
+      name: github
+      url: 'https://github.com/gohugoio'
+    - key: 1
+      name: twitter
+      url: 'https://www.example.com'
+    - key: 2
+      name: linkedin
+      url: 'https://www.example.com'
+    - key: 3
+      name: email
+      url: 'mailto:email@example.com'
