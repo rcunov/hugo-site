@@ -11,7 +11,7 @@ disableKinds:
   - term
 showMetadata: false
 
-title: "Posts"
+title: "posts"
 tags: 
   - index
 ---
