@@ -17,8 +17,8 @@ params:
   author: rcunov
   user: rcunov
   hostname: www.cunov.net
-  readingTime: true
-  published: true
+  readingTime: false
+  published: false
   social:
     - key: 0
       name: github
