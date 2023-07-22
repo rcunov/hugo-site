@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Selfhosted application hardening
-date: 2022-06-15 22:21 -0500
-categories: homelab
-tags: ['docker', 'cloudflare', 'proxy']
-mermaid: true
+date: "2022-06-15"
 ---
 
 TL:DR start [here](#updated-threat-modeling)
@@ -30,30 +27,7 @@ I migrated my DNS provider from Namecheap to Cloudflare to give me access to the
 I pointed the tunnel to my Nginx Proxy Manager Docker container that runs my reverse proxy to a Docker network with various servers. This Docker network doesn't expose any ports to LAN except 443 and 81, both of which are required for the reverse proxy. I configured split DNS for this Plex host as well, which means that my internal DNS points requests for Plex to its internal IP (so traffic doesn't go all the way to Cloudflare's edge and back) and WAN DNS points to the Cloudflare tunnel.
 
 ### WAN traffic
-```mermaid
-graph TD
-    A(Internet) -- Initial HTTPS --> B(Cloudflare)
-    B -- Tunnel through home firewall --> C(Docker server)  
-```
-
+![WAN traffic diagram](wan.png)
+{{< figure src="lan.png" class="center">}}
 ### LAN traffic
-```mermaid
-stateDiagram-v2
-    server: Docker server
-    cf: Cloudflare tunnel
-    rp: Reverse proxy
-
-    state server {
-        [*] --> cf
-        cf --> rp
-
-        state rp {
-            [*] --> Server
-        }
-    }
-```
-```goat
-.-------.
-|   
-```
-
+![LAN traffic diagram](lan.png)
