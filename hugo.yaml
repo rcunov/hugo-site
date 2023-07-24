@@ -1,0 +1,30 @@
+baseURL: 'https://www.cunov.net'
+languageCode: en-us
+title: cunov.net
+theme: nightfall
+
+menu:
+  header:
+    - name: posts
+      weight: 0
+      url: posts
+    - name: about
+      weight: 1
+      url: about
+
+params:
+  author: rcunov
+  user: rcunov
+  hostname: www.cunov.net
+  readingTime: false
+  published: false
+  social:
+    - key: 0
+      name: github
+      url: 'https://github.com/rcunov'
+    - key: 1
+      name: linkedin
+      url: 'https://www.linkedin.com/in/rcunov/'
+    - key: 2
+      name: email
+      url: 'mailto:trams.uneven0e@icloud.com'
