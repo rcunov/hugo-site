@@ -1,2 +1,8 @@
+# lock file
 .hugo_build.lock
+
+# build dir
 public/
+
+# hugo binary when i'm lazy and don't install it to PATH
+hugo.exe
