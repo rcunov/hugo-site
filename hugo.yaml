@@ -1,4 +1,4 @@
-baseURL: 'https://www.cunov.net'
+# baseURL: 'https://www.cunov.net'
 languageCode: en-us
 title: cunov.net
 theme: nightfall
@@ -7,10 +7,10 @@ menu:
   header:
     - name: posts
       weight: 0
-      url: /posts
+      url: /posts/
     - name: about
       weight: 1
-      url: /about
+      url: /about/
 
 params:
   author: rcunov
