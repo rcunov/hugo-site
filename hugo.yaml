@@ -1,4 +1,4 @@
-baseURL: 'https://www.cunov.net'
+# baseURL: 'https://www.cunov.net'
 languageCode: en-us
 title: cunov.net
 theme: nightfall
