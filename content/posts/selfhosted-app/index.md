@@ -27,7 +27,6 @@ I migrated my DNS provider from Namecheap to Cloudflare to give me access to the
 I pointed the tunnel to my Nginx Proxy Manager Docker container that runs my reverse proxy to a Docker network with various servers. This Docker network doesn't expose any ports to LAN except 443 and 81, both of which are required for the reverse proxy. I configured split DNS for this Plex host as well, which means that my internal DNS points requests for Plex to its internal IP (so traffic doesn't go all the way to Cloudflare's edge and back) and WAN DNS points to the Cloudflare tunnel.
 
 ### WAN traffic
-![WAN traffic diagram](wan.png)
-{{< figure src="lan.png" class="center">}}
+{{< figure src="wan.svg">}}
 ### LAN traffic
-![LAN traffic diagram](lan.png)
+{{< figure src="lan.svg">}}
